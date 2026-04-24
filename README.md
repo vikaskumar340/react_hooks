@@ -82,10 +82,25 @@ useLayoutEffect() - used for dom measurement , layout adjustment , prevent flike
 
     },dependency)
 
+Custom Hook
+- fetch API Data
+- Managing form 
+- Toggle values
+- Handling local storage
+- Timer login
+- Authentication logic
 
+Reuse logic | Keep component clean and small | Avoid duplicate code 
+
+Rules
+- start with use (useGreeting)
+- reurns values/ function only (no html)
+- can use other hooks inside custom hook 
 
 
 
 
 # react_hooks
 REACT Practice with basic to advance
+
+git config --global --add safe.directory "C:/vikas/REACT_PRACTICE/react_hooks"

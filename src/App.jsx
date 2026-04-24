@@ -7,6 +7,7 @@ import ReducerExample from "./components/reducer-example/ReducerExample";
 import CallbackExample from "./components/callback-example/CallbackExample";
 import LayoutExample from "./components/useLayout-example/LayoutExample";
 import MemoExample from "./components/memo-example/MemoExample";
+import CustomHookExample from "./components/custom-hooks/CustomHookExample";
 function App() {
   return (
     <CartProvider>
@@ -19,6 +20,9 @@ function App() {
           <Route path="memo-example" element={<MemoExample/>} /> 
           <Route path="callback-example" element={<CallbackExample/>} /> 
           <Route path="layout-example" element={<LayoutExample/>} /> 
+          <Route path="custom-hook-example" element={<CustomHookExample/>} /> 
+
+          
           
 
         </Routes>

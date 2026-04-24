@@ -13,6 +13,7 @@ function NavHeader() {
           <Link className="nav-link d-inline text-white" to="/memo-example">Memo | </Link>
           <Link className="nav-link d-inline text-white" to="/callback-example">Callback | </Link>
           <Link className="nav-link d-inline text-white" to="/layout-example">Layout | </Link>
+          <Link className="nav-link d-inline text-white" to="/custom-hook-example">Custom Hook | </Link>
 
         </div>
       </div>
