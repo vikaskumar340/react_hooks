@@ -97,6 +97,17 @@ Rules
 - reurns values/ function only (no html)
 - can use other hooks inside custom hook 
 
+customHook 
+
+Higher Orrder Component ( HOC )
+Mainly used for 
+1.Reusing logic
+2.Adding extra features
+3.Wrapping components with reusable component
+
+Example 
+
+
 
 
 

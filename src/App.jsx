@@ -8,6 +8,7 @@ import CallbackExample from "./components/callback-example/CallbackExample";
 import LayoutExample from "./components/useLayout-example/LayoutExample";
 import MemoExample from "./components/memo-example/MemoExample";
 import CustomHookExample from "./components/custom-hooks/CustomHookExample";
+import HocExample from "./components/hoc-example/HocExample";
 function App() {
   return (
     <CartProvider>
@@ -21,6 +22,7 @@ function App() {
           <Route path="callback-example" element={<CallbackExample/>} /> 
           <Route path="layout-example" element={<LayoutExample/>} /> 
           <Route path="custom-hook-example" element={<CustomHookExample/>} /> 
+          <Route path="hoc-example" element={<HocExample/>} /> 
 
           
           
