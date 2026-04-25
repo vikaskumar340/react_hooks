@@ -1,4 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { lazy, Suspense } from "react";
+const Home = lazy(() => import("./pages/Home"));
+const NavHeader = lazy(() => import("./components/shoping/NavHeader"));
+const CartPage = lazy(() => import("./pages/CartPage"));
+const ReducerExample = lazy(() => import("./components/reducer-example/ReducerExample"));
+const CallbackExample = lazy(() => import("./components/callback-example/CallbackExample"));
+const LayoutExample = lazy(() => import("./components/useLayout-example/LayoutExample"));
+const MemoExample = lazy(() => import("./components/memo-example/MemoExample"));
+const CustomHookExample = lazy(() => import("./components/custom-hooks/CustomHookExample"));
+const HocExample = lazy(() => import("./components/hoc-example/HocExample"));
+const LazyExample = lazy(() => import("./components/lazy-loading/LazyExample"));
+import { CartProvider } from "./contexts/Cardcontext";
+/*
 import Home from "./pages/Home";
 import NavHeader from "./components/shoping/NavHeader";
 import CartPage from "./pages/CartPage";
@@ -9,25 +22,28 @@ import LayoutExample from "./components/useLayout-example/LayoutExample";
 import MemoExample from "./components/memo-example/MemoExample";
 import CustomHookExample from "./components/custom-hooks/CustomHookExample";
 import HocExample from "./components/hoc-example/HocExample";
+import LazyExample from "./components/lazy-loading/LazyExample";
+*/
+
+
 function App() {
   return (
     <CartProvider>
       <BrowserRouter>
         <NavHeader/>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="cart" element={<CartPage/>} />
-          <Route path="reducer-example" element={<ReducerExample/>} />
-          <Route path="memo-example" element={<MemoExample/>} /> 
-          <Route path="callback-example" element={<CallbackExample/>} /> 
-          <Route path="layout-example" element={<LayoutExample/>} /> 
-          <Route path="custom-hook-example" element={<CustomHookExample/>} /> 
-          <Route path="hoc-example" element={<HocExample/>} /> 
-
-          
-          
-
-        </Routes>
+        <Suspense fallback={<span>Loading...</span>}>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="cart" element={<CartPage/>} />
+            <Route path="reducer-example" element={<ReducerExample/>} />
+            <Route path="memo-example" element={<MemoExample/>} /> 
+            <Route path="callback-example" element={<CallbackExample/>} /> 
+            <Route path="layout-example" element={<LayoutExample/>} /> 
+            <Route path="custom-hook-example" element={<CustomHookExample/>} /> 
+            <Route path="hoc-example" element={<HocExample/>} /> 
+            <Route path="lazy-example" element={<LazyExample/>} /> 
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </CartProvider>
   )

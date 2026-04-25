@@ -108,7 +108,14 @@ Mainly used for
 Example 
 
 
-
+lazy() loading 
+ex 
+const Product = lazy(() => import("./Product"));
+<Suspense fallback={<span>Loading...</span>}>
+    <Routes>
+        <Route />
+    </Routes>
+</Suspense>
 
 
 # react_hooks
