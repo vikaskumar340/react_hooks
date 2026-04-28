@@ -118,6 +118,9 @@ const Product = lazy(() => import("./Product"));
 </Suspense>
 
 
+createPortal / partial 
+
+
 # react_hooks
 REACT Practice with basic to advance
 

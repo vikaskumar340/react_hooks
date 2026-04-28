@@ -16,9 +16,8 @@ function NavHeader() {
           <Link className="nav-link d-inline text-white" to="/custom-hook-example">Custom Hook | </Link>
           <Link className="nav-link d-inline text-white" to="/hoc-example">HOC | </Link>
           <Link className="nav-link d-inline text-white" to="/lazy-example">Lazy Loading | </Link>
-
-          
-
+          <Link className="nav-link d-inline text-white" to="/react-quiz">Quiz | </Link>
+          <Link className="nav-link d-inline text-white" to="/create-portal">CreatPortal | </Link>
         </div>
       </div>
     </nav>

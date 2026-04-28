@@ -10,7 +10,16 @@ const MemoExample = lazy(() => import("./components/memo-example/MemoExample"));
 const CustomHookExample = lazy(() => import("./components/custom-hooks/CustomHookExample"));
 const HocExample = lazy(() => import("./components/hoc-example/HocExample"));
 const LazyExample = lazy(() => import("./components/lazy-loading/LazyExample"));
+const ReactQuizHome = lazy(() => import("./pages/quiz/Home"));
+const Quiz = lazy(() => import("./pages/quiz/Quiz"));
+
+
+
 import { CartProvider } from "./contexts/Cardcontext";
+import QuizProvider from "./contexts/QuizContext";
+import Result from "./pages/quiz/Result";
+import LeaderBoard from "./pages/quiz/LeaderBoard";
+import CreatePortalExample from "./components/create-portal/CreatePortalExample";
 /*
 import Home from "./pages/Home";
 import NavHeader from "./components/shoping/NavHeader";
@@ -42,6 +51,11 @@ function App() {
             <Route path="custom-hook-example" element={<CustomHookExample/>} /> 
             <Route path="hoc-example" element={<HocExample/>} /> 
             <Route path="lazy-example" element={<LazyExample/>} /> 
+            <Route path="react-quiz" element={ <QuizProvider> <ReactQuizHome/> </QuizProvider> } ></Route> 
+            <Route path="quiz" element={ <QuizProvider> <Quiz/> </QuizProvider>} /> 
+            <Route path="quiz-result" element={<QuizProvider> <Result /> </QuizProvider>} />
+            <Route path="leaderboard" element={ <LeaderBoard /> } />
+            <Route path="create-portal" element={ <CreatePortalExample /> } />
           </Routes>
         </Suspense>
       </BrowserRouter>

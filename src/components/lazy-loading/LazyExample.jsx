@@ -1,5 +1,5 @@
 import {useState} from 'react'
-// import LoadPosts from './LoadPosts';
+import LoadPosts from './LoadPosts';
 // const LoadPosts = lazy(() => import("./LoadPosts"));
 
 function LazyExample() {
