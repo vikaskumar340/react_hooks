@@ -8,7 +8,7 @@ function MyModal({isOpen, onClose, children}) {
                 <button style={styles.closeBtn} onClick={onClose}>Close</button>
             </div>
         </div> 
-    , document.querySelector("#modal-root"))
+    , document.querySelector("#modal-root")) 
 }
 
 const styles = {

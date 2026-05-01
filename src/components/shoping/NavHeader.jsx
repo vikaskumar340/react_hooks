@@ -18,6 +18,7 @@ function NavHeader() {
           <Link className="nav-link d-inline text-white" to="/lazy-example">Lazy Loading | </Link>
           <Link className="nav-link d-inline text-white" to="/react-quiz">Quiz | </Link>
           <Link className="nav-link d-inline text-white" to="/create-portal">CreatPortal | </Link>
+          <Link className="nav-link d-inline text-white" to="/form-hook">Form Hook | </Link>
         </div>
       </div>
     </nav>

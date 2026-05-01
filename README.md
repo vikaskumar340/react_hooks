@@ -120,6 +120,15 @@ const Product = lazy(() => import("./Product"));
 
 createPortal / partial 
 
+Error Boundaries
+Error boundaries apply component based 
+this is best to apply error boundary on component label 
+can make log in file or db inside componentDidCatch() 
+===============================
+react hook form
+@hookform/devtools
+
+
 
 # react_hooks
 REACT Practice with basic to advance

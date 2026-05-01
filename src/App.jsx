@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import HookForm from "./components/hook-form/HookForm";
 const Home = lazy(() => import("./pages/Home"));
 const NavHeader = lazy(() => import("./components/shoping/NavHeader"));
 const CartPage = lazy(() => import("./pages/CartPage"));
@@ -56,6 +57,7 @@ function App() {
             <Route path="quiz-result" element={<QuizProvider> <Result /> </QuizProvider>} />
             <Route path="leaderboard" element={ <LeaderBoard /> } />
             <Route path="create-portal" element={ <CreatePortalExample /> } />
+            <Route path="form-hook" element={ <HookForm /> }/>
           </Routes>
         </Suspense>
       </BrowserRouter>
